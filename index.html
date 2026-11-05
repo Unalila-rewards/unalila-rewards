@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#32133f">
+<title>أوناليلا | دعوة صديق</title>
+<style>
+:root{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#fff;background:#271030}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 5%,#60326b 0,#35163e 45%,#220e2b 100%);display:grid;place-items:center;padding:20px}.wrap{width:min(100%,440px);border:1px solid #b99a65;border-radius:22px;padding:25px 22px 30px;text-align:center;background:#ffffff09;box-shadow:0 18px 50px #0004}.top{display:flex;justify-content:flex-end}.lang{border:1px solid #d5bd86;color:#f9e8c3;background:transparent;padding:9px 15px;border-radius:40px;cursor:pointer;font-size:14px}.brand{font-family:Georgia,serif;letter-spacing:3px;font-size:28px;color:#e5cd96;margin:0}.arabicbrand{color:#e5cd96;margin:5px 0 25px;font-size:17px}h1{font-size:28px;line-height:1.5;margin:0 0 13px}p{font-size:16px;line-height:1.9;color:#f1e9f3;margin:0 0 22px}.highlight{color:#f1d79e}button.primary{border:0;background:#e4c88f;color:#29102e;font-weight:800;font-size:18px;border-radius:14px;padding:17px 16px;width:100%;cursor:pointer;min-height:54px}button.secondary{border:1px solid #c6a975;background:transparent;color:#f3e2b7;font-size:16px;border-radius:14px;padding:14px;width:100%;margin-top:13px;cursor:pointer}.hint{font-size:13px;color:#d9c9df;margin-top:20px;line-height:1.7}.reward{display:none}.reward.show{display:block}.intro.hide{display:none}.coupon{background:#f8f1e6;color:#34163c;border:2px solid #d7b97d;border-radius:18px;padding:26px 14px;margin:18px 0 18px}.coupon .label{font-size:16px}.coupon .percent{font-size:76px;line-height:1.3;font-weight:900;color:#52225e;direction:ltr}.coupon .sub{font-size:16px;color:#52225e;font-weight:700}.note{font-size:13px;color:#e8dbe8}.foot{font-size:12px;color:#d8c4db;margin-top:22px}@media(max-width:360px){.wrap{padding:18px 14px}h1{font-size:24px}}
+</style>
+</head>
+<body><main class="wrap">
+<div class="top"><button class="lang" id="lang" type="button">English</button></div>
+<div class="brand">UNALILA</div><div class="arabicbrand">أوناليلا</div>
+<section class="intro" id="intro"><h1 id="headline">خصمك <span class="highlight">5%</span> بانتظارك!</h1><p id="description">ادعُ صديقك لتجربة أوناليلا واستمتع بخصم فوري على فاتورتك اليوم.</p><button class="primary" id="share" type="button">أرسل الدعوة عبر واتساب ↗</button><div id="after" hidden><button class="secondary" id="claim" type="button">أرسلت الدعوة؟ أظهر خصمي 🎁</button></div><div class="hint" id="hint">بعد إرسال الدعوة، ارجع لهذه الصفحة لاستلام الخصم.</div></section>
+<section class="reward" id="reward" aria-live="polite"><h1 id="thanks">شكرًا لمشاركة أوناليلا 💜</h1><div class="coupon"><div class="label" id="couponTitle">بطاقة خصم أوناليلا</div><div class="percent">5%</div><div class="sub" id="couponSub">خصم على فاتورتك الحالية</div></div><p id="showCashier">أظهر هذه البطاقة للكاشير أو الويتر لتطبيق الخصم.</p><div class="note" id="terms">خصم واحد لكل فاتورة · لا يُجمع مع عروض أخرى</div></section>
+<div class="foot" id="privacy">لا نطلب الوصول إلى محادثاتك أو بيانات أصدقائك.</div>
+</main>
+<script>
+(()=>{
+const copy={ar:{lang:'English',headline:'خصمك <span class="highlight">5%</span> بانتظارك!',description:'ادعُ صديقك لتجربة أوناليلا واستمتع بخصم فوري على فاتورتك اليوم.',share:'أرسل الدعوة عبر واتساب ↗',claim:'أرسلت الدعوة؟ أظهر خصمي 🎁',hint:'بعد إرسال الدعوة، ارجع لهذه الصفحة لاستلام الخصم.',thanks:'شكرًا لمشاركة أوناليلا 💜',couponTitle:'بطاقة خصم أوناليلا',couponSub:'خصم على فاتورتك الحالية',showCashier:'أظهر هذه البطاقة للكاشير أو الويتر لتطبيق الخصم.',terms:'خصم واحد لكل فاتورة · لا يُجمع مع عروض أخرى',privacy:'لا نطلب الوصول إلى محادثاتك أو بيانات أصدقائك.',message:'جربت أوناليلا اليوم وعجبني 💜\nوقلت لازم تجربه أنت بعد 😄\n\nيقولون تعال ولك خصم 10% 👌🏻\n\nهذا حسابهم 👇🏻\nhttps://www.instagram.com/unalila_rest/'},en:{lang:'العربية',headline:'Your <span class="highlight">5% OFF</span> is waiting!',description:'Invite a friend to try UNALILA and enjoy an instant discount on today’s bill.',share:'Send invitation on WhatsApp ↗',claim:'Sent it? Show my discount 🎁',hint:'After sharing, return to this page to claim your discount.',thanks:'Thanks for sharing UNALILA 💜',couponTitle:'UNALILA DISCOUNT CARD',couponSub:'Discount on your current bill',showCashier:'Show this card to your cashier or waiter to apply the discount.',terms:'One discount per bill · Cannot be combined with other offers',privacy:'We do not access your chats or your friends’ information.',message:'I tried UNALILA today and loved it 💜\nYou should try it too! 😄\n\nYou get 10% off your first visit 👌🏻\n\nHere’s their Instagram 👇🏻\nhttps://www.instagram.com/unalila_rest/'}};
+let lang='ar',started=false;const $=id=>document.getElementById(id);
+function render(){document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';Object.keys(copy[lang]).filter(k=>k!=='message').forEach(k=>{if($(k))$(k).innerHTML=copy[lang][k]});$('after').hidden=!started}
+$('lang').addEventListener('click',()=>{lang=lang==='ar'?'en':'ar';render()});
+$('share').addEventListener('click',()=>{started=true;render();window.location.href='https://wa.me/?text='+encodeURIComponent(copy[lang].message)});
+$('claim').addEventListener('click',()=>{if(!started)return;$('intro').classList.add('hide');$('reward').classList.add('show')});
+render();
+})();
+</script></body></html>
